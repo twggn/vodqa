@@ -1,0 +1,68 @@
+#!/usr/bin/env ruby
+
+# A few helpful tips about the Rules file:
+#
+# * The string given to #compile and #route are matching patterns for
+#   identifiers--not for paths. Therefore, you can’t match on extension.
+#
+# * The order of rules is important: for each item, only the first matching
+#   rule is applied.
+#
+# * Item identifiers start and end with a slash (e.g. “/about/” for the file
+#   “content/about.html”). To select all children, grandchildren, … of an
+#   item, use the pattern “/about/*/”; “/about/*” will also select the parent,
+#   because “*” matches zero or more characters.
+
+compile 'css/app.sass' do
+  filter :sass, filename: item.raw_filename, load_paths: [ '.', 'assets/css/' ], cache: false
+end
+
+compile '/form/*/' do
+  filter :erb
+  layout 'form'
+end
+
+compile '*' do
+  if item.binary?
+    # don’t filter binary items
+  else
+    filter :erb
+    layout start_date.future? ? 'default' : 'archive'
+  end
+end
+
+compile "/", rep: :index do
+  filter :erb
+  layout start_date.future? ? 'default' : 'archive'
+end
+
+route 'css/app.sass' do
+  # Compile app.SASS to app.CSS
+  '/css/app.css'
+end
+
+route '/form/*/' do
+  "/#{item.identifier.split('/')[2]}.html"
+end
+
+route 'css/**/_*' do
+  nil
+end
+
+route 'css/_*' do
+  nil
+end
+
+route '*' do
+  if item.binary?
+    item.identifier.chop
+  else
+    start_date.strftime('/%b%Y.html').downcase
+  end
+end
+
+route '/', rep: :index do
+  '/index.html'
+end
+
+layout '*', :erb

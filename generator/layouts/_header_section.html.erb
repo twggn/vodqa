@@ -1,0 +1,44 @@
+<header id="header" class="feature">
+    <div class="fixed">
+        <nav class="top-bar">
+            <ul class="title-area">
+                <li class="name"><h1><a href="./">Converge Gurgaon &raquo; <span><%= start_date(latest).strftime("%b %-d") %></span></a></h1></li>
+                <li class="toggle-topbar menu-icon"><a href="#"></a></li>
+            </ul>
+            <section class="top-bar-section">
+                <ul class="left">
+                    <li><a href="http://www.thoughtworks.com/locations/gurgaon" target="_blank"
+                           onclick="ga('send', 'event', 'tw', 'tw')">ThoughtWorks</a>
+                    </li>
+                </ul>
+                <ul class="right">
+                    <li>
+                    <% if latest[:participate] %>
+                        <a href="<%= latest[:participate] %>"  rel="nofollow"
+                           onclick="ga('send', 'event', 'participate', 'participate')">
+                            Participate
+                        </a>
+                    <% end %>
+                    </li>
+                    <li>
+                    <% if latest[:talk] %>
+                        <a href="<%= latest[:talk] %>"  rel="nofollow"
+                           onclick="ga('send', 'event', 'talk', 'talk')">
+                            Present
+                        </a>
+                    <% end %>
+                    </li>
+                    <% if page != 'form' %>
+                      <li><a href="#about">About</a></li>
+                      <li><a href="#agenda">Agenda</a></li>
+                    <% end %>
+
+                    <% if @item == latest %>
+                        <li><a href="#location">Location</a></li>
+                    <% end %>
+                    <% if archives.any? %><li><a href="#archive">Previous Editions</a></li><% end %>
+                </ul>
+            </section>
+        </nav>
+    </div>
+</header>

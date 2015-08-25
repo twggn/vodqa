@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+$white: #FFFFFF;
+$dark: #222222;
+$blue: #00AEEF;
+$yellow: #b38600;
+$orange: #F06819;
+$pink: pink;
+$merged-bg: rgb(222,227,241);
+
+$primary-color: $dark !default;
+$secondary-color: $orange !default;
+
+$base-font-size: 140% !default;
+$body-bg: $white !default;
+$body-font-color: $dark !default;
+$body-font-weight: 300 !default;
+$body-font-family: 'Open Sans', sans-serif !default;
+
+$header-top-margin: 0 !default;
+$header-bottom-margin: .1em !default;
+$header-font-family: $body-font-family;
+$header-font-weight: $body-font-weight !default;
+
+$paragraph-font-size: .75em !default;
+$paragraph-margin-bottom: .5em !default;
+$paragraph-font-weight: $body-font-weight !default;
+$paragraph-line-height: 1.25 !default;
+
+$topbar-bg-color: darken($white, 5%);
+$topbar-link-color: $dark;
+$topbar-link-bg-hover: $yellow;
+$topbar-title-weight: $body-font-weight !default;
+$topbar-link-weight: $body-font-weight !default;
+
+@import "foundation/variables";
