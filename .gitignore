@@ -30,4 +30,3 @@ generator/tmp
 generator/output
 *.log
 .bundle
-.rvmrc
