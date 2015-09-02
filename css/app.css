@@ -1803,7 +1803,8 @@ th.hide-for-touch {
     padding-left: 15px;
     font-size: 0.8125em;
     font-weight: 300;
-    background: #222222; }
+    background: #222222;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25); }
     .top-bar-section ul li > a.button {
       background: #222222;
       font-size: 0.8125em;
@@ -3678,7 +3679,9 @@ section {
       #header .fixed {
         display: none; } }
     #header .fixed .name h1 a {
-      width: auto; }
+      width: auto;
+      font-weight: bold;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25); }
       #header .fixed .name h1 a span {
         font-weight: normal;
         display: inline-block;
@@ -3698,7 +3701,7 @@ section {
     #intro {
       margin-top: 45px; } }
   #intro .row {
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(0, 0, 0, 0.7);
     margin-bottom: 0;
     padding: 1em 0; }
   #intro .logo .tw-logo {
@@ -3709,15 +3712,14 @@ section {
       -ms-animation: bounce 1s 0s ease both;
       -o-animation: bounce 1s 0s ease both;
       animation: bounce 1s 0s ease both; }
-  #intro .logo #intro-desc {
-    background-color: rgba(0, 0, 0, 0.8); }
-    #intro .logo #intro-desc h1 {
-      -webkit-animation: bounceInRight 1s 0s ease both;
-      -moz-animation: bounceInRight 1s 0s ease both;
-      -ms-animation: bounceInRight 1s 0s ease both;
-      -o-animation: bounceInRight 1s 0s ease both;
-      animation: bounceInRight 1s 0s ease both;
-      color: white; }
+  #intro .logo #intro-desc h1 {
+    -webkit-animation: bounceInRight 1s 0s ease both;
+    -moz-animation: bounceInRight 1s 0s ease both;
+    -ms-animation: bounceInRight 1s 0s ease both;
+    -o-animation: bounceInRight 1s 0s ease both;
+    animation: bounceInRight 1s 0s ease both;
+    color: white;
+    margin-bottom: 0.2em; }
   #intro .logo img {
     display: inline-block;
     margin: 0 auto;
@@ -3748,27 +3750,29 @@ section {
     -moz-animation: fadeInDown 1s 1s ease both;
     -ms-animation: fadeInDown 1s 1s ease both;
     -o-animation: fadeInDown 1s 1s ease both;
-    animation: fadeInDown 1s 1s ease both; }
+    animation: fadeInDown 1s 1s ease both;
+    color: #e2e2e2; }
   #intro .countdown .date h4 {
     -webkit-animation: fadeInUp 1s 1s ease both;
     -moz-animation: fadeInUp 1s 1s ease both;
     -ms-animation: fadeInUp 1s 1s ease both;
     -o-animation: fadeInUp 1s 1s ease both;
     animation: fadeInUp 1s 1s ease both;
-    border-top: 1px dashed #222222; }
+    border-top: 1px dashed #e2e2e2; }
   #intro .countdown .counter p {
     -webkit-animation: fadeInUp 1s 1s ease both;
     -moz-animation: fadeInUp 1s 1s ease both;
     -ms-animation: fadeInUp 1s 1s ease both;
     -o-animation: fadeInUp 1s 1s ease both;
-    animation: fadeInUp 1s 1s ease both; }
+    animation: fadeInUp 1s 1s ease both;
+    color: #e2e2e2; }
   #intro .countdown .counter h4 {
     -webkit-animation: fadeInDown 1s 1s ease both;
     -moz-animation: fadeInDown 1s 1s ease both;
     -ms-animation: fadeInDown 1s 1s ease both;
     -o-animation: fadeInDown 1s 1s ease both;
     animation: fadeInDown 1s 1s ease both;
-    border-bottom: 1px dashed #222222; }
+    border-bottom: 1px dashed #e2e2e2; }
     #intro .countdown .counter h4#seconds {
       overflow: hidden;
       position: relative; }
@@ -3827,7 +3831,8 @@ section {
       -o-animation: fadeInUp 1s 2s ease both;
       animation: fadeInUp 1s 2s ease both; }
     #intro .actions a {
-      display: block; }
+      display: block;
+      margin: 0 auto; }
       #intro .actions a:hover {
         -webkit-animation: tada 1s 0s ease both;
         -moz-animation: tada 1s 0s ease both;
@@ -3844,8 +3849,9 @@ section {
         -webkit-border-radius: 3px;
         border-radius: 3px;
         color: white;
-        padding: 0.25em;
-        margin-bottom: 0.25em; }
+        padding: 1em 0.25em;
+        margin-bottom: 0.25em;
+        font-size: 1.2em; }
         #intro .actions a h4:hover, #intro .actions a h4:focus {
           background-color: #c9520d; }
         #intro .actions a h4:hover, #intro .actions a h4:focus {

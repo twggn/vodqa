@@ -30,7 +30,7 @@ $topbar-dropdown-toggle-alpha: 0.5 !default;
 $topbar-link-color: #fff !default;
 $topbar-link-color-hover: #fff !default;
 $topbar-link-color-active: #fff !default;
-$topbar-link-weight: bold !default;
+$topbar-link-weight: 900 !default;
 $topbar-link-font-size: em-calc(13) !default;
 $topbar-link-hover-lightness: -30% !default; // Darken by 30%
 $topbar-link-bg-hover: adjust-color($topbar-dropdown-bg, $lightness: $topbar-link-hover-lightness) !default;
@@ -265,6 +265,7 @@ $topbar-arrows: true !default; //Set false to remove the triangle icon from the 
         font-size: $topbar-link-font-size;
         font-weight: $topbar-link-weight;
         background: $topbar-dropdown-bg;
+        text-shadow: 0 1px 2px rgba(0,0,0,0.25);
 
         &.button {
           background: $primary-color;
