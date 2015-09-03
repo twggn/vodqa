@@ -3719,7 +3719,9 @@ section {
     -o-animation: bounceInRight 1s 0s ease both;
     animation: bounceInRight 1s 0s ease both;
     color: white;
-    margin-bottom: 0.2em; }
+    margin-bottom: 0;
+    border-bottom: dashed 1px #e2e2e2;
+    line-height: 2; }
   #intro .logo img {
     display: inline-block;
     margin: 0 auto;
@@ -3737,7 +3739,12 @@ section {
     animation: flipInX 1s 0.5s ease both;
     color: white; }
   #intro .logo h6, #intro .logo #archive .grid a .month, #archive .grid a #intro .logo .month {
-    color: white; }
+    color: white;
+    font-size: 0.7em;
+    text-align: justify;
+    font-weight: 100;
+    margin-top: 31px;
+    line-height: 1.8; }
   #intro .logo h5.subheader {
     color: #f3002a;
     font-size: 0.85em;
@@ -3964,6 +3971,12 @@ section {
     color: white; }
   #about code, #about abbr, #about acronym {
     color: #d9d9d9; }
+  #about .row {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-bottom: 1em;
+    margin-bottom: 0; }
+    #about .row:first-child {
+      background: none; }
   #about .social a {
     font-size: 1.5em;
     display: inline-block;
@@ -4016,6 +4029,15 @@ section {
     #about blockquote cite {
       margin: 0.25em 0;
       text-align: right; }
+  #about h4 {
+    border-bottom: dashed 1px #e2e2e2;
+    line-height: 2; }
+  #about h6, #about #archive .grid a .month, #archive .grid a #about .month {
+    font-size: 0.7em;
+    text-align: justify;
+    font-weight: 100;
+    margin-top: 14px;
+    line-height: 1.8; }
 
 #archive {
   color: #222222;
