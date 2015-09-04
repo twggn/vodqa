@@ -475,31 +475,74 @@ section
     margin-top: $topbar-height
 
   .speaker-register-form
-    margin: 0 auto
+    margin: 0 auto 2em
     background: rgba(0, 0, 0, 0.7)
+    min-height: 800px
 
   h1
     color: #fff
     margin-bottom: 0
     border-bottom: dashed 1px #e2e2e2
     +animate(fadeInDown)
+    line-height: 2
 
   .form-container
     width: 100% !important
+    padding: 1em 0
 
   form
-    width: 70% !important
+    width: 50% !important
     margin: 0 auto
 
-    input
-      width: 80% !important
+    input, textarea, select
+      display: block
+      width: 300px !important
+      border: none
+      border-bottom: 1px solid #e2e2e2
 
   .mktoForm 
-      .mktoFieldWrap
-        width: 80% !important
+    .mktoFieldWrap
+      width: 80% !important
 
-      .mktoFormCol
-        width: 100% !important
+    .mktoFormCol, .mktoFieldWrap
+      width: 100% !important
+
+    .mktoLabel
+      color: #e2e2e2 !important
+      width: 150px !important
+      font-size: 1em !important
+
+    .mktoButtonWrap.mktoSimple
+      .mktoButton
+        position: relative
+        vertical-align: top
+        width: 100%
+        height: 60px
+        padding: 0
+        font-size: 22px
+        color: white
+        text-align: center
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25)
+        background: rgb(192, 204, 0)
+        border: 0
+        cursor: pointer
+        -webkit-box-shadow: inset 0 -2px rgb(109, 107, 0)
+        box-shadow: inset 0 -2px rgb(109, 107, 0)
+
+        &:active, &:hover
+          top: 1px
+          outline: none
+          -webkit-box-shadow: none
+          box-shadow: none
+          background: rgb(109, 107, 0)
+          border: none
+
+
+
+
+
+
+
     
 
 

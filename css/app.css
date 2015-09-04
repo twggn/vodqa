@@ -4112,8 +4112,9 @@ section {
     .speaker-register-wrapper {
       margin-top: 45px; } }
   .speaker-register-wrapper .speaker-register-form {
-    margin: 0 auto;
-    background: rgba(0, 0, 0, 0.7); }
+    margin: 0 auto 2em;
+    background: rgba(0, 0, 0, 0.7);
+    min-height: 800px; }
   .speaker-register-wrapper h1 {
     color: white;
     margin-bottom: 0;
@@ -4122,15 +4123,46 @@ section {
     -moz-animation: fadeInDown 1s 0s ease both;
     -ms-animation: fadeInDown 1s 0s ease both;
     -o-animation: fadeInDown 1s 0s ease both;
-    animation: fadeInDown 1s 0s ease both; }
+    animation: fadeInDown 1s 0s ease both;
+    line-height: 2; }
   .speaker-register-wrapper .form-container {
-    width: 100% !important; }
+    width: 100% !important;
+    padding: 1em 0; }
   .speaker-register-wrapper form {
-    width: 70% !important;
+    width: 50% !important;
     margin: 0 auto; }
-    .speaker-register-wrapper form input {
-      width: 80% !important; }
-    .speaker-register-wrapper form .mktoForm .mktoFieldWrap {
-      width: 80% !important; }
-    .speaker-register-wrapper form .mktoForm .mktoFormCol {
-      width: 100% !important; }
+    .speaker-register-wrapper form input, .speaker-register-wrapper form textarea, .speaker-register-wrapper form select {
+      display: block;
+      width: 300px !important;
+      border: none;
+      border-bottom: 1px solid #e2e2e2; }
+  .speaker-register-wrapper .mktoForm .mktoFieldWrap {
+    width: 80% !important; }
+  .speaker-register-wrapper .mktoForm .mktoFormCol, .speaker-register-wrapper .mktoForm .mktoFieldWrap {
+    width: 100% !important; }
+  .speaker-register-wrapper .mktoForm .mktoLabel {
+    color: #e2e2e2 !important;
+    width: 150px !important;
+    font-size: 1em !important; }
+  .speaker-register-wrapper .mktoForm .mktoButtonWrap.mktoSimple .mktoButton {
+    position: relative;
+    vertical-align: top;
+    width: 100%;
+    height: 60px;
+    padding: 0;
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    background: #c0cc00;
+    border: 0;
+    cursor: pointer;
+    -webkit-box-shadow: inset 0 -2px #6d6b00;
+    box-shadow: inset 0 -2px #6d6b00; }
+    .speaker-register-wrapper .mktoForm .mktoButtonWrap.mktoSimple .mktoButton:active, .speaker-register-wrapper .mktoForm .mktoButtonWrap.mktoSimple .mktoButton:hover {
+      top: 1px;
+      outline: none;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      background: #6d6b00;
+      border: none; }
