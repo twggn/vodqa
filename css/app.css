@@ -4104,3 +4104,33 @@ section {
       line-height: 1em; }
       #footer .row p a {
         color: #664d00; }
+
+.speaker-register-wrapper {
+  background: url("../img/form_bg.jpg") no-repeat 0 0;
+  background-size: cover; }
+  @media only screen and (min-width: 768px) {
+    .speaker-register-wrapper {
+      margin-top: 45px; } }
+  .speaker-register-wrapper .speaker-register-form {
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.7); }
+  .speaker-register-wrapper h1 {
+    color: white;
+    margin-bottom: 0;
+    border-bottom: dashed 1px #e2e2e2;
+    -webkit-animation: fadeInDown 1s 0s ease both;
+    -moz-animation: fadeInDown 1s 0s ease both;
+    -ms-animation: fadeInDown 1s 0s ease both;
+    -o-animation: fadeInDown 1s 0s ease both;
+    animation: fadeInDown 1s 0s ease both; }
+  .speaker-register-wrapper .form-container {
+    width: 100% !important; }
+  .speaker-register-wrapper form {
+    width: 70% !important;
+    margin: 0 auto; }
+    .speaker-register-wrapper form input {
+      width: 80% !important; }
+    .speaker-register-wrapper form .mktoForm .mktoFieldWrap {
+      width: 80% !important; }
+    .speaker-register-wrapper form .mktoForm .mktoFormCol {
+      width: 100% !important; }
