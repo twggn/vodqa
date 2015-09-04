@@ -4143,7 +4143,9 @@ section {
   .speaker-register-wrapper .mktoForm .mktoLabel {
     color: #e2e2e2 !important;
     width: 150px !important;
-    font-size: 1em !important; }
+    font-size: 1.5em !important;
+    font-weight: normal !important;
+    padding-top: 0 !important; }
   .speaker-register-wrapper .mktoForm .mktoButtonWrap.mktoSimple .mktoButton {
     position: relative;
     vertical-align: top;
@@ -4166,3 +4168,12 @@ section {
       box-shadow: none;
       background: #6d6b00;
       border: none; }
+
+#location h2 {
+  border-bottom: dashed 1px #e2e2e2;
+  line-height: 2; }
+#location .address p {
+  text-align: left; }
+#location .location-container {
+  margin-bottom: 0 !important;
+  padding-bottom: 1em; }
