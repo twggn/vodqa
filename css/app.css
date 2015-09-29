@@ -4105,17 +4105,14 @@ section {
       #footer .row p a {
         color: #664d00; }
 
-.speaker-register-wrapper {
+#form {
   background: url("../img/form_bg.jpg") no-repeat 0 0;
-  background-size: cover; }
+  background-size: cover;
+  padding-bottom: 1em; }
   @media only screen and (min-width: 768px) {
-    .speaker-register-wrapper {
+    #form {
       margin-top: 45px; } }
-  .speaker-register-wrapper .speaker-register-form {
-    margin: 0 auto 2em;
-    background: rgba(0, 0, 0, 0.7);
-    min-height: 800px; }
-  .speaker-register-wrapper h1 {
+  #form h1 {
     color: white;
     margin-bottom: 0;
     border-bottom: dashed 1px #e2e2e2;
@@ -4125,49 +4122,61 @@ section {
     -o-animation: fadeInDown 1s 0s ease both;
     animation: fadeInDown 1s 0s ease both;
     line-height: 2; }
-  .speaker-register-wrapper .form-container {
-    width: 100% !important;
-    padding: 1em 0; }
-  .speaker-register-wrapper form {
-    width: 50% !important;
+  #form form {
+    width: 85% !important;
     margin: 0 auto; }
-    .speaker-register-wrapper form input, .speaker-register-wrapper form textarea, .speaker-register-wrapper form select {
+    @media only screen and (min-width: 768px) {
+      #form form {
+        width: 50% !important; } }
+    #form form input, #form form textarea, #form form select {
       display: block;
-      width: 300px !important;
+      width: 65% !important;
       border: none;
+      height: 2em;
       border-bottom: 1px solid #e2e2e2; }
-  .speaker-register-wrapper .mktoForm .mktoFieldWrap {
-    width: 80% !important; }
-  .speaker-register-wrapper .mktoForm .mktoFormCol, .speaker-register-wrapper .mktoForm .mktoFieldWrap {
-    width: 100% !important; }
-  .speaker-register-wrapper .mktoForm .mktoLabel {
-    color: #e2e2e2 !important;
-    width: 150px !important;
-    font-size: 1.5em !important;
-    font-weight: normal !important;
-    padding-top: 0 !important; }
-  .speaker-register-wrapper .mktoForm .mktoButtonWrap.mktoSimple .mktoButton {
-    position: relative;
-    vertical-align: top;
+  #form .mktoForm {
+    margin: 1em auto;
+    background: rgba(0, 0, 0, 0.7);
+    min-height: 800px;
+    padding: 3em 4em 0; }
+    #form .mktoForm .mktoFieldWrap {
+      width: 80% !important; }
+    #form .mktoForm .mktoFormCol, #form .mktoForm .mktoFieldWrap {
+      width: 100% !important; }
+    #form .mktoForm .mktoLabel {
+      color: #e2e2e2 !important;
+      width: 150px !important;
+      font-size: 1.5em !important;
+      font-weight: normal !important;
+      padding-top: 0 !important;
+      margin: 5px 0; }
+    #form .mktoForm .mktoButtonWrap.mktoSimple .mktoButton {
+      position: relative;
+      vertical-align: top;
+      width: 250px;
+      height: 60px;
+      padding: 0;
+      font-size: 22px;
+      color: white;
+      text-align: center;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+      background: #c0cc00;
+      border: 0;
+      cursor: pointer;
+      -webkit-box-shadow: inset 0 -2px #6d6b00;
+      box-shadow: inset 0 -2px #6d6b00; }
+      #form .mktoForm .mktoButtonWrap.mktoSimple .mktoButton:active, #form .mktoForm .mktoButtonWrap.mktoSimple .mktoButton:hover {
+        top: 1px;
+        outline: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        background: #6d6b00;
+        border: none; }
+  #form .mktoButtonRow {
     width: 100%;
-    height: 60px;
-    padding: 0;
-    font-size: 22px;
-    color: white;
-    text-align: center;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
-    background: #c0cc00;
-    border: 0;
-    cursor: pointer;
-    -webkit-box-shadow: inset 0 -2px #6d6b00;
-    box-shadow: inset 0 -2px #6d6b00; }
-    .speaker-register-wrapper .mktoForm .mktoButtonWrap.mktoSimple .mktoButton:active, .speaker-register-wrapper .mktoForm .mktoButtonWrap.mktoSimple .mktoButton:hover {
-      top: 1px;
-      outline: none;
-      -webkit-box-shadow: none;
-      box-shadow: none;
-      background: #6d6b00;
-      border: none; }
+    text-align: center; }
+    #form .mktoButtonRow .mktoButtonWrap {
+      margin: 0 !important; }
 
 #location h2 {
   border-bottom: dashed 1px #e2e2e2;
