@@ -465,19 +465,16 @@ section
         color: $alt-fg
 
 
-//speaker form styles
+//user registration form styles
 
-.speaker-register-wrapper
+#form
   background: url("../img/form_bg.jpg") no-repeat 0 0
   background-size: cover
+  padding-bottom: 1em
 
   @media #{$small}
     margin-top: $topbar-height
 
-  .speaker-register-form
-    margin: 0 auto 2em
-    background: rgba(0, 0, 0, 0.7)
-    min-height: 800px
 
   h1
     color: #fff
@@ -486,21 +483,26 @@ section
     +animate(fadeInDown)
     line-height: 2
 
-  .form-container
-    width: 100% !important
-    padding: 1em 0
-
   form
-    width: 50% !important
+    width: 85% !important
     margin: 0 auto
+
+    @media #{$small}
+      width: 50% !important
 
     input, textarea, select
       display: block
-      width: 300px !important
+      width: 65% !important
       border: none
+      height: 2em
       border-bottom: 1px solid #e2e2e2
 
-  .mktoForm 
+  .mktoForm
+    margin: 1em auto
+    background: rgba(0, 0, 0, 0.7)
+    min-height: 800px
+    padding: 3em 4em 0
+
     .mktoFieldWrap
       width: 80% !important
 
@@ -513,13 +515,14 @@ section
       font-size: 1.5em !important
       font-weight: normal !important
       padding-top: 0 !important
+      margin: 5px 0
 
 
     .mktoButtonWrap.mktoSimple
       .mktoButton
         position: relative
         vertical-align: top
-        width: 100%
+        width: 250px
         height: 60px
         padding: 0
         font-size: 22px
@@ -539,6 +542,14 @@ section
           box-shadow: none
           background: rgb(109, 107, 0)
           border: none
+
+  .mktoButtonRow
+    width: 100%
+    text-align: center
+    .mktoButtonWrap
+      margin: 0 !important
+
+
 #location
   h2
     border-bottom: dashed 1px #e2e2e2
