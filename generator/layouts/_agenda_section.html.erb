@@ -30,11 +30,11 @@
                     <% end %>
                     </small></p>
                 <% end %>
-                <% if agenda[:resources] %>
-                    <p><small>Resources:
-                    <% agenda[:resources].each_with_index do |resource, i| %>
+                <% if agenda[:prerequisites] %>
+                    <p><small><b>Pre-requisites:</b>
+                    <% agenda[:prerequisites].each_with_index do |resource, i| %>
                         <a href="<%= resource[:url] %>" rel="nofollow" target="_blank"><%= resource[:title] %></a>
-                        <%= ' &bull; ' if i != agenda[:resources].length - 1 %>
+                        <%= ' &bull; ' if i != agenda[:prerequisites].length - 1 %>
                     <% end %>
                     </small></p>
                 <% end %>
