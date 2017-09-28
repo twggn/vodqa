@@ -1,0 +1,4 @@
+---
+# handlers file for tomcat8
+- include: services.yml
+- include: verification.yml

@@ -1,0 +1,4 @@
+---
+# handlers file for dockertest
+- include: services.yml
+- include: verification.yml

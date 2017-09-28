@@ -1,0 +1,6 @@
+---
+# tasks file for tomcat8
+- include: install.yml
+- include: configure.yml
+- include: services.yml
+- include: verification.yml

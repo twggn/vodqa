@@ -1,0 +1,20 @@
+---
+  - action: uri url=http://localhost:8080/springwebapp/car/add return_content=yes
+    register: webpage
+
+  - fail: msg='service is not happy'
+    when: "'Add a car' not in webpage.content"
+  
+  - shell: date
+    register: cmd_result
+
+  - assert:
+       that:
+       - "'IST 2017' in cmd_result.stdout"  
+
+  - stat: path=/var/www/html/index.html
+    register: p
+
+  - assert:
+       that:
+       - p.stat.exists

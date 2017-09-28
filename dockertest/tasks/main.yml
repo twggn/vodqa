@@ -1,0 +1,3 @@
+---
+# tasks file for dockertest
+- include: verification.yml

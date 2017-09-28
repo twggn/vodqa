@@ -1,0 +1,14 @@
+---
+  - action: uri url=http://192.168.1.8:49998/springwebapp/car/add return_content=yes
+    register: webpage
+
+  - fail: msg='service is not happy'
+    when: "'Add a car' not in webpage.content"
+  
+  - shell: date
+    register: cmd_result
+
+  - assert:
+       that:
+       - "'UTC 2017' in cmd_result.stdout"  
+

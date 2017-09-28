@@ -1,0 +1,8 @@
+---
+  - name: Install Java 1.8
+    apt: pkg=openjdk-8-jdk state=installed
+
+  - name: Install Tomcat 8
+    apt: pkg=tomcat8 state=installed update_cache=true
+    environment:
+      PATH: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/usr/bin/java:/sbin:/bin:/usr/games:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin:/usr/s       hare/tomcat8:/usr/share/tomcat8/bin

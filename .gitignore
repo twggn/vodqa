@@ -2,6 +2,8 @@
 *.bak
 *.orig
 .idea/
+target/*/*
+taget/*.*
 
 # sublime
 *.sublime-workspace
