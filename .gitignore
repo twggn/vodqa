@@ -3,7 +3,8 @@
 *.orig
 .idea/
 target/*/*
-taget/*.*
+target/*.*
+target/*
 
 # sublime
 *.sublime-workspace
