@@ -1,7 +1,5 @@
 ---
 - hosts: test-servers
-  become: true
-  become_user: root
   roles: 
     - tomcat8
 - hosts: test-server-docker
