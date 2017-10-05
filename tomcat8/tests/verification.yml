@@ -1,0 +1,29 @@
+---
+ - shell: service tomcat8 status
+   register: cmd_result_tom
+
+ - assert:
+      that:
+      - "'active' in cmd_result_tom.stdout"
+
+ - stat: path=/var/lib/tomcat8/webapps/springwebapp.war
+   register: p
+
+ - assert:
+      that:
+      - p.stat.exists
+
+ - name: Saving content in webpage
+   action: uri url=http://localhost:8080/springwebapp/car/add return_content=yes
+   register: webpage
+
+ - name: Dislay message if Add a car message not shown on webapp
+   fail: msg='service is not happy'
+   when: "'Add a car' not in webpage.content"
+
+ - shell: date
+   register: cmd_result
+
+ - assert:
+      that:
+      - "'IST 2017' in cmd_result.stdout"
