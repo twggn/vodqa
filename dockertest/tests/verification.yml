@@ -12,5 +12,5 @@
 
  - assert:
       that:
-      - "'IST 2017' in cmd_result.stdout"
+      - "'UTC 2017' in cmd_result.stdout"
 
