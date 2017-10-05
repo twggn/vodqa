@@ -1,11 +1,4 @@
 ---
- - shell: service tomcat8 status
-   register: cmd_result_tom
-
- - assert:
-      that:
-      - "'active' in cmd_result_tom.stdout"
-
  - stat: path=/var/lib/tomcat8/webapps/springwebapp.war
    register: p
 
